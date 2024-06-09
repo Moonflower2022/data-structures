@@ -36,3 +36,16 @@ class DisjointSet {
         }
     }
 }
+
+let set = new DisjointSet();
+set.makeSet(4);
+set.makeSet(8);
+set.makeSet(3);
+set.union(4, 8);
+set.union(4, 3);
+let a = [4, 8, 3];
+a.forEach((item) => {
+    console.log(set.findRepresentative(item));
+});
+console.log(set.parents)
+console.log(set.sizes);
