@@ -17,6 +17,10 @@ class DisjointSet {
         }
     }
 
+    areInSameSet(x, y) {
+        return this.findRepresentative(x) === this.findRepresentative(y);
+    }
+
     union(x, y) {
         const xRepresentative = this.findRepresentative(x);
         const yRepresentative = this.findRepresentative(y);
