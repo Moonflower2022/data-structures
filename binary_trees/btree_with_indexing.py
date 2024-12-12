@@ -6,6 +6,7 @@ import graphviz
 
 # YOOO I talked to wes this is really dumb and pointlesss
 
+
 class Node:
     def __init__(self, value, left_pointer=None, right_pointer=None) -> None:
         self.value = value
@@ -15,15 +16,16 @@ class Node:
 
     def __str__(self) -> str:
         return f"<AVLNode object; value: {self.value}, frequency: {self.frequency}, left_pointer: {self.left_pointer}, right_pointer: {self.right_pointer}>"
-    
+
+
 class BinaryTree:
     def __init__(self) -> None:
         self.tree = []
-        
+
     def __str__(self) -> str:
         return str([node.__str__() for node in self.tree])
-    
-    def index(self, ele): # -1 if not found, pointer if found ig
+
+    def index(self, ele):  # -1 if not found, pointer if found ig
         pass
 
     def travel(self, index, value):
@@ -48,6 +50,7 @@ class BinaryTree:
             self.tree.append(Node(value))
             return
         self.travel(0, value)
+
 
 tree = BinaryTree()
 

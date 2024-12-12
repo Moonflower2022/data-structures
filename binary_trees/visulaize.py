@@ -2,6 +2,7 @@ from btree import Node, insert, find_min
 import os
 import graphviz
 
+
 def visualize_binary_tree(root):
     # does not show frequency
 
@@ -21,9 +22,10 @@ def visualize_binary_tree(root):
     add_nodes_and_edges(root)
 
     dirname = os.path.dirname(__file__)
-    filename = os.path.join(dirname, 'binary_tree')
+    filename = os.path.join(dirname, "binary_tree")
 
-    dot.render(filename, view=True, format='png')
+    dot.render(filename, view=True, format="png")
+
 
 root = Node(6)
 insert(root, 8)

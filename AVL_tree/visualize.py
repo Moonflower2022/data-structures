@@ -17,6 +17,7 @@ print(tree.find_min())
 tree.delete(5)
 tree.delete(6)
 
+
 def visualize_AVL_tree(tree):
     # does not show frequency
 
@@ -36,8 +37,9 @@ def visualize_AVL_tree(tree):
     add_nodes_and_edges(tree.root)
 
     dirname = os.path.dirname(__file__)
-    filename = os.path.join(dirname, 'AVL_tree')
+    filename = os.path.join(dirname, "AVL_tree")
 
-    dot.render(filename, view=True, format='png')
+    dot.render(filename, view=True, format="png")
+
 
 visualize_AVL_tree(tree)
